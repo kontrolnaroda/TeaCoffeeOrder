@@ -4,10 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
@@ -17,7 +15,7 @@ private EditText editTextPassword;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        editTextPersonName = findViewById(R.id.editTextTextPersonName);
+        editTextPersonName = findViewById(R.id.editTextPersonName);
         editTextPassword = findViewById(R.id.editTextTextPassword);
 
     }
@@ -28,6 +26,8 @@ private EditText editTextPassword;
         if (!name.isEmpty() && !password.isEmpty()) {
 
             Intent intent = new Intent(this, OrderActivity.class);
+            intent.putExtra("name", name);
+            intent.putExtra("password", password);
             startActivity(intent);
         }else{
 Toast toast = Toast.makeText(LoginActivity.this,"Все поля должны быть заполнены!", Toast.LENGTH_SHORT);

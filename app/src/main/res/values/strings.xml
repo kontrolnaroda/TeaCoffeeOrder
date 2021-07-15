@@ -5,13 +5,15 @@
     <string name="hint_name">Введите ваше имя</string>
     <string name="hint_password">Введите пароль</string>
     <string name="button_create_order">СОЗДАТЬ ЗАКАЗ</string>
-    <string name="hellow_klient">Привет, клиент! Что будете заказывать?</string>
+    <string name="hellow_klient">Привет, %s! Что будете заказывать?</string>
     <string name="tea">Чай</string>
     <string name="coffee">Кофе</string>
     <string name="additions">Что желаете добавить?</string>
     <string name="milk">Молоко</string>
     <string name="sugar">Сахар</string>
     <string name="lemon">Лимон</string>
+    <string name="defalte_name">Клиент</string>
+    <string name="defalte_password">0000</string>
     <string name="choose_drink">Выберите тип напитка</string>
     <string-array name="options_of_coffee">
         <item>Американо</item>

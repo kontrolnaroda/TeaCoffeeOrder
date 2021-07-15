@@ -27,21 +27,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+
         app:layout_constraintTop_toBottomOf="@id/textViewHello"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         >
         <RadioButton
+            android:id="@+id/radiobuttonTea"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
+            android:checked="true"
+            android:onClick="onClickChangeButton"
             android:background="@color/red"
             android:textColor="@color/white"
             android:text="@string/tea"/>
         <RadioButton
+            android:id="@+id/radiobuttonCoffee"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
+            android:onClick="onClickChangeButton"
             android:background="@color/red"
             android:textColor="@color/white"
             android:text="@string/coffee"/>
